@@ -54,5 +54,4 @@ public class CalculatorNativeTests extends TestBasisMobile {
         assertEquals("19.36", calculatorView.getResult().getText(), "Assert that result of multiply fractional numbers is correct");
         calculatorView.getClearSign().click();
     }
-
 }
