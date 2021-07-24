@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import java.net.URL;
 
 public class TestBasisWeb {
-    public AppiumDriver appiumDriver;
+    public AppiumDriver<WebElement> appiumDriver;
     public WebDriverWait wait;
     public WebElement element;
 
@@ -36,7 +36,7 @@ public class TestBasisWeb {
         capabilities.setCapability("chromedriverExecutableDir", "C:\\Users\\sderi\\.m2\\repository\\webdriver\\chromedriver\\win32\\91.0.4472.101");
 
         URL serverAddress = new URL("http://0.0.0.0:4723/wd/hub");
-        appiumDriver = new AndroidDriver(serverAddress, capabilities);
+        appiumDriver = new AndroidDriver<WebElement>(serverAddress, capabilities);
         wait = new WebDriverWait(appiumDriver, 20);
     }
 

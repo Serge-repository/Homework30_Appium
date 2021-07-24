@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import java.net.URL;
 
 public class TestBasisMobile {
-    public AppiumDriver appiumDriver;
+    public AppiumDriver<MobileElement> appiumDriver;
     public WebDriverWait wait;
     public MobileElement element;
 
@@ -29,7 +29,7 @@ public class TestBasisMobile {
         capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
 
         URL serverAddress = new URL("http://0.0.0.0:4723/wd/hub");
-        appiumDriver = new AndroidDriver(serverAddress, capabilities);
+        appiumDriver = new AndroidDriver<MobileElement>(serverAddress, capabilities);
     }
 
     @AfterClass

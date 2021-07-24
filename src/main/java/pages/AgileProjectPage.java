@@ -21,7 +21,7 @@ public class AgileProjectPage extends GeneralPage {
     @FindBy(xpath = "//a[contains(text(),'Log out')]")
     private WebElement logOutButton;
 
-    public AgileProjectPage(AppiumDriver appiumDriver, WebDriverWait wait, WebElement element) {
+    public AgileProjectPage(AppiumDriver<WebElement> appiumDriver, WebDriverWait wait, WebElement element) {
         super(appiumDriver, wait, element);
     }
 

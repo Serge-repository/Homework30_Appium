@@ -25,7 +25,7 @@ public class CalculatorView extends GeneralPage {
     @AndroidFindBy(xpath = "//android.widget.Button[contains(@resource-id, 'op_mul')]")
     private MobileElement multiplySign;
 
-    public CalculatorView(AppiumDriver appiumDriver, WebDriverWait wait, MobileElement element) {
+    public CalculatorView(AppiumDriver<MobileElement> appiumDriver, WebDriverWait wait, MobileElement element) {
         super(appiumDriver, wait, element);
     }
 

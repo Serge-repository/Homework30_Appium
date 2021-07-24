@@ -2,10 +2,8 @@ package pages;
 
 import GeneralSetupViewsAndPages.GeneralPage;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
@@ -25,9 +23,8 @@ public class HomePage extends GeneralPage {
     private WebElement pageTable;
 
 
-    public HomePage(AppiumDriver appiumDriver, WebDriverWait wait, WebElement element) {
+    public HomePage(AppiumDriver<WebElement> appiumDriver, WebDriverWait wait, WebElement element) {
         super(appiumDriver, wait, element);
-        PageFactory.initElements(new AppiumFieldDecorator(this.appiumDriver), this);
     }
 
     public void clickOnRequiredHomePageElement(int elementNumber, String elementName){

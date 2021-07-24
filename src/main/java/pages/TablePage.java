@@ -11,7 +11,7 @@ public class TablePage extends GeneralPage {
     @FindBy(xpath = "//table")
     private WebElement table;
 
-    public TablePage(AppiumDriver appiumDriver, WebDriverWait wait, WebElement element) {
+    public TablePage(AppiumDriver<WebElement> appiumDriver, WebDriverWait wait, WebElement element) {
         super(appiumDriver, wait, element);
     }
 

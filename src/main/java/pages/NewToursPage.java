@@ -11,7 +11,7 @@ public class NewToursPage extends GeneralPage {
     @FindBy(xpath = "//img[contains(@src,'images/logo.gif')]")
     private WebElement toursLogo;
 
-    public NewToursPage(AppiumDriver appiumDriver, WebDriverWait wait, WebElement element) {
+    public NewToursPage(AppiumDriver<WebElement> appiumDriver, WebDriverWait wait, WebElement element) {
         super(appiumDriver, wait, element);
     }
 

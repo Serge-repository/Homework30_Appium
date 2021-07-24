@@ -13,7 +13,7 @@ public class BankPage extends GeneralPage {
     @FindBy(name = "btnLogin")
     private WebElement loginButton;
 
-    public BankPage(AppiumDriver appiumDriver, WebDriverWait wait, WebElement element) {
+    public BankPage(AppiumDriver<WebElement> appiumDriver, WebDriverWait wait, WebElement element) {
         super(appiumDriver, wait, element);
     }
 
